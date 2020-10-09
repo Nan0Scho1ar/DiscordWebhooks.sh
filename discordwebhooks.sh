@@ -1,6 +1,6 @@
 #!/bin/sh
 
-save() { read -p "Enter $1: " r1; read -p "Enter $2: " r2; echo "$r1~|~$r1" >> "$3"; }
+save() { read -p "Enter $1: " r1; read -p "Enter $2: " r2; echo "$r1~|~$r2" >> "$3"; }
 
 mkdir -p ~/.config/cordhooks/;
 if [ -z $1 ]; then
