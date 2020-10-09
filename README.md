@@ -8,7 +8,7 @@ easily be substituted with something like dmenu.
 
 Intentionally left barebones to stay below 20 SLOC.
 
-```
+```sh
 #!/bin/sh
 
 save() { read -p "Enter $1: " r1; read -p "Enter $2: " r2; echo "$r1~|~$r2" >> "$3"; }
