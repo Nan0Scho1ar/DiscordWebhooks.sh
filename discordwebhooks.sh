@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 save() { read -p "Enter $1: " r1; read -p "Enter $2: " r2; echo "$r1~|~$r2" >> $3; }
 delete() { sed -i $(cat -n $1 | fzf --with-nth 2.. | awk '{print $1"d"}') $1; }
